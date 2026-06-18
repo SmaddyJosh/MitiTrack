@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MITI TRACK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#012d1d",
+                        secondary: "#2c694e",
+                        "secondary-fixed": "#b1f0ce",
+                        "primary-container": "#1b4332",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        background: "#f8f9fa",
+                        surface: "#f8f9fa",
+                        "surface-variant": "#e1e3e4",
+                        outline: "#717973",
+                        "outline-variant": "#c1c8c2",
+                        error: "#ba1a1a"
+                    },
+                    maxWidth: {
+                        container: "1280px"
+                    }
+                }
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

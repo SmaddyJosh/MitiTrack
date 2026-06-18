@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+ultralytics
+pillow
+requests
+geopy
+python-multipart
+python-dotenv
