@@ -89,7 +89,7 @@ export default function LoginPage() {
                             <div className="space-y-6">
                                 <div className="flex gap-4">
                                     <div className="w-12 h-12 bg-secondary-fixed/20 rounded-lg flex items-center justify-center shrink-0">
-                                        <span class="material-symbols-outlined text-white text-2xl">insights</span>
+                                        <span className="material-symbols-outlined text-white text-2xl">insights</span>
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-white">Interactive Dashboards</h3>
@@ -98,7 +98,7 @@ export default function LoginPage() {
                                 </div>
                                 <div className="flex gap-4">
                                     <div className="w-12 h-12 bg-secondary-fixed/20 rounded-lg flex items-center justify-center shrink-0">
-                                        <span class="material-symbols-outlined text-white text-2xl">co2</span>
+                                        <span className="material-symbols-outlined text-white text-2xl">co2</span>
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-white">Carbon Calculations</h3>
@@ -199,7 +199,7 @@ export default function LoginPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-900 mb-4">Company</h4>
+                            <h4 className="font-semibold text-gray-900 mb-4">Company</h4>
                             <ul className="space-y-2 text-sm text-gray-600 p-0 list-none">
                                 <li><a href="#" className="hover:text-primary transition no-underline">About</a></li>
                                 <li><a href="#" className="hover:text-primary transition no-underline">Blog</a></li>
@@ -207,7 +207,7 @@ export default function LoginPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-900 mb-4">Resources</h4>
+                            <h4 className="font-semibold text-gray-900 mb-4">Resources</h4>
                             <ul className="space-y-2 text-sm text-gray-600 p-0 list-none">
                                 <li><a href="#" className="hover:text-primary transition no-underline">Docs</a></li>
                                 <li><a href="#" className="hover:text-primary transition no-underline">Support</a></li>
@@ -215,7 +215,7 @@ export default function LoginPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-900 mb-4">Legal</h4>
+                            <h4 className="font-semibold text-gray-900 mb-4">Legal</h4>
                             <ul className="space-y-2 text-sm text-gray-600 p-0 list-none">
                                 <li><a href="#" className="hover:text-primary transition no-underline">Privacy</a></li>
                                 <li><a href="#" className="hover:text-primary transition no-underline">Terms</a></li>
@@ -227,8 +227,8 @@ export default function LoginPage() {
                         <p>&copy; 2026 MITI TRACK. All rights reserved.</p>
                         <div className="flex gap-6 mt-4 sm:mt-0">
                             <a href="#" className="hover:text-primary transition no-underline">Twitter</a>
-                            <a href="#" class="hover:text-primary transition no-underline">GitHub</a>
-                            <a href="#" class="hover:text-primary transition no-underline">LinkedIn</a>
+                            <a href="#" className="hover:text-primary transition no-underline">GitHub</a>
+                            <a href="#" className="hover:text-primary transition no-underline">LinkedIn</a>
                         </div>
                     </div>
                 </div>

@@ -116,7 +116,7 @@ export default function RegisterPage() {
                             <div className="space-y-6">
                                 <div className="flex gap-4">
                                     <div className="w-12 h-12 bg-secondary-fixed/20 rounded-lg flex items-center justify-center shrink-0">
-                                        <span class="material-symbols-outlined text-white text-2xl">verified</span>
+                                        <span className="material-symbols-outlined text-white text-2xl">verified</span>
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-white">Scientific Precision</h3>
@@ -125,7 +125,7 @@ export default function RegisterPage() {
                                 </div>
                                 <div className="flex gap-4">
                                     <div className="w-12 h-12 bg-secondary-fixed/20 rounded-lg flex items-center justify-center shrink-0">
-                                        <span class="material-symbols-outlined text-white text-2xl">shield_with_heart</span>
+                                        <span className="material-symbols-outlined text-white text-2xl">shield_with_heart</span>
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-white">Transparent Verification</h3>
@@ -134,7 +134,7 @@ export default function RegisterPage() {
                                 </div>
                                 <div className="flex gap-4">
                                     <div className="w-12 h-12 bg-secondary-fixed/20 rounded-lg flex items-center justify-center shrink-0">
-                                        <span class="material-symbols-outlined text-white text-2xl">trending_up</span>
+                                        <span className="material-symbols-outlined text-white text-2xl">trending_up</span>
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-white">Scale Impact</h3>
@@ -293,7 +293,7 @@ export default function RegisterPage() {
                                             onChange={(e) => setAgreeTerms(e.target.checked)}
                                             className="mt-1 w-4 h-4 rounded border-outline-variant text-primary focus:ring-secondary cursor-pointer"
                                         />
-                                        <label htmlFor="terms" class="text-sm text-gray-600 cursor-pointer select-none">
+                                        <label htmlFor="terms" className="text-sm text-gray-600 cursor-pointer select-none">
                                             I agree to the <a href="#" className="text-secondary font-medium hover:underline">Terms of Service</a> and <a href="#" className="text-secondary font-medium hover:underline">Privacy Policy</a>
                                         </label>
                                     </div>
@@ -339,7 +339,7 @@ export default function RegisterPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-900 mb-4">Company</h4>
+                            <h4 className="font-semibold text-gray-900 mb-4">Company</h4>
                             <ul className="space-y-2 text-sm text-gray-600 p-0 list-none">
                                 <li><a href="#" className="hover:text-primary transition no-underline">About</a></li>
                                 <li><a href="#" className="hover:text-primary transition no-underline">Blog</a></li>
@@ -347,7 +347,7 @@ export default function RegisterPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-900 mb-4">Resources</h4>
+                            <h4 className="font-semibold text-gray-900 mb-4">Resources</h4>
                             <ul className="space-y-2 text-sm text-gray-600 p-0 list-none">
                                 <li><a href="#" className="hover:text-primary transition no-underline">Docs</a></li>
                                 <li><a href="#" className="hover:text-primary transition no-underline">Support</a></li>
@@ -355,7 +355,7 @@ export default function RegisterPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-900 mb-4">Legal</h4>
+                            <h4 className="font-semibold text-gray-900 mb-4">Legal</h4>
                             <ul className="space-y-2 text-sm text-gray-600 p-0 list-none">
                                 <li><a href="#" className="hover:text-primary transition no-underline">Privacy</a></li>
                                 <li><a href="#" className="hover:text-primary transition no-underline">Terms</a></li>
@@ -367,8 +367,8 @@ export default function RegisterPage() {
                         <p>&copy; 2026 MITI TRACK. All rights reserved.</p>
                         <div className="flex gap-6 mt-4 sm:mt-0">
                             <a href="#" className="hover:text-primary transition no-underline">Twitter</a>
-                            <a href="#" class="hover:text-primary transition no-underline">GitHub</a>
-                            <a href="#" class="hover:text-primary transition no-underline">LinkedIn</a>
+                            <a href="#" className="hover:text-primary transition no-underline">GitHub</a>
+                            <a href="#" className="hover:text-primary transition no-underline">LinkedIn</a>
                         </div>
                     </div>
                 </div>
