@@ -9,9 +9,7 @@ import torch.nn as nn
 import torch.optim as optim
 from tqdm import tqdm
 
-# ==========================================
 # 1. Configuration & Hyperparameters
-# ==========================================
 CSV_FILE = 'train_classes.csv'  # Path to the Kaggle dataset CSV
 IMAGE_DIR = 'train-jpg'         # Path to the unzipped images folder
 BATCH_SIZE = 32
@@ -31,9 +29,7 @@ TAGS = [
 # Create a mapping from tag name to integer ID
 TAG_TO_IDX = {tag: i for i, tag in enumerate(TAGS)}
 
-# ==========================================
 # 2. Custom Dataset Class
-# ==========================================
 class AmazonDataset(Dataset):
     def __init__(self, csv_file, img_dir, transform=None):
         """
@@ -71,9 +67,7 @@ class AmazonDataset(Dataset):
                 
         return image, label
 
-# ==========================================
 # 3. Model Definition
-# ==========================================
 def get_model(num_classes):
     # Load a pre-trained ResNet50 model
     model = models.resnet50(weights=models.ResNet50_Weights.DEFAULT)
@@ -84,9 +78,7 @@ def get_model(num_classes):
     
     return model
 
-# ==========================================
 # 4. Training Loop
-# ==========================================
 def train():
     print(f"Using device: {DEVICE}")
 

@@ -26,3 +26,11 @@ dist-ssr
 # Environment files
 .env
 **/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/

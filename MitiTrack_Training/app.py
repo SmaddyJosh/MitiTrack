@@ -17,14 +17,12 @@ from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut
 from ultralytics import YOLO
 
-# ── Config from .env ────────────────────────────────────────
+# Config from .env
 GOOGLE_API_KEY  = os.getenv("GOOGLE_MAPS_API_KEY", "")
 MODEL_PATH_ENV  = os.getenv("MODEL_PATH", "deforestation_yolov8_best/best.pt")
 CACHE_MAX_SIZE  = int(os.getenv("CACHE_MAX_SIZE", 128))
 
-# ─────────────────────────────────────────────
 # Model Loading
-# ─────────────────────────────────────────────
 import torch
 
 MODEL_DIR = "deforestation_yolov8_best/best"
@@ -72,9 +70,7 @@ def _load_model():
 
 model = _load_model()
 
-# ─────────────────────────────────────────────
 # App Setup
-# ─────────────────────────────────────────────
 app = FastAPI(
     title="MitiTrack Forest Analysis API",
     description="Detect deforestation & reforestation rates using YOLOv8 satellite imagery analysis.",
@@ -88,9 +84,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ─────────────────────────────────────────────
 # Class label helpers — matched to actual model classes
-# ─────────────────────────────────────────────
 FOREST_LABELS     = {"tree", "Tree"}
 DEFORESTED_LABELS = {"farmland", "building"}
 
@@ -102,9 +96,7 @@ COLOR_MAP = {
     "water":    "#3b82f6",
 }
 
-# ─────────────────────────────────────────────
 # Utility functions
-# ─────────────────────────────────────────────
 @lru_cache(maxsize=256)
 def geocode(place: str):
     """Cached geocoding — returns lat, lon, and full address hierarchy."""
@@ -163,7 +155,7 @@ def lat_lon_to_tile(lat: float, lon: float, zoom: int):
     return x, y
 
 
-# ── Tile cache (keyed by url hash) ─────────────────────────
+# Tile cache (keyed by url hash)
 _tile_cache: dict = {}
 
 def _get_tile_bytes(url: str) -> bytes:
@@ -409,9 +401,7 @@ def analyze_planting_suitability(
     }
 
 
-# ─────────────────────────────────────────────
 # Endpoints
-# ─────────────────────────────────────────────
 
 @app.get("/", summary="Health check")
 def health():
